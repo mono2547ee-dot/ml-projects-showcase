@@ -1,77 +1,81 @@
 <!DOCTYPE html>
 <html lang="th">
-
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Machine Learning Portfolio</title>
-
-<link rel="stylesheet" href="style.css">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Learning Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header>
+    <!-- =========================
+         Hero Section
+    ========================== -->
+    <section class="hero">
+        <h1>🤖 Machine Learning Portfolio</h1>
+        <p>รวมผลงานโมเดล Machine Learning</p>
+    </section>
 
-<h1>🤖 Machine Learning Portfolio</h1>
+    <!-- =========================
+         Profile Section
+    ========================== -->
+    <section class="profile">
+        <img src="profile.jpg" alt="profile">
+        <h2>ผู้พัฒนา</h2>
+        <h3>นายณิชพน ธนวัตณัชกุล</h3>
+        <p>รหัสนักศึกษา : 664245034</p>
+        <p>หมู่เรียน : 66/44</p>
+        <p>รายวิชา : ระบบฐานข้อมูลขั้นสูง</p>
+    </section>
 
-<p>
-รวมผลงานโมเดล Machine Learning
-</p>
+    <!-- =========================
+         About Section
+    ========================== -->
+    <section class="about">
+        <h2>รวมผลงานโมเดล Machine Learning</h2>
+        <p>
+            โมเดล Machine Learning ทั้งหมดจากรายวิชานี้
+            ถูกเทรนและ Deploy ขึ้นเป็นเว็บแอปที่ใช้งานได้จริง
+            บน Streamlit Cloud
+        </p>
+    </section>
 
-</header>
+    <!-- =========================
+         Projects Section
+    ========================== -->
+    <section class="projects">
 
-<section class="profile">
+        <!-- Card 1 -->
+        <div class="card">
+            <img src="https://via.placeholder.com/400x220/1e293b/38bdf8?text=Heart+Disease" alt="Heart Disease">
+            <h3>ทำนายความเสี่ยงโรคหัวใจ (Decision Tree)</h3>
+            <p>จำแนกความเสี่ยงการเกิดโรคหัวใจจากข้อมูลสุขภาพผู้ป่วย ด้วยเทคนิค Decision Tree</p>
+        </div>
 
-<img src="images/profile.jpg" alt="profile">
+        <!-- Card 2 -->
+        <div class="card">
+            <img src="https://via.placeholder.com/400x220/1e293b/38bdf8?text=Credit+Risk" alt="Credit Risk">
+            <h3>ระบบประเมินความเสี่ยงการผิดนัดชำระบัตรเครดิต</h3>
+            <p>วิเคราะห์โอกาสที่ลูกค้าจะผิดนัดชำระในอนาคตถัดไป จากประวัติการชำระเงิน 6 เดือน วงเงิน และข้อมูลพื้นฐาน ด้วยเทคนิค SVM</p>
+        </div>
 
-<h2>ผู้พัฒนา</h2>
+        <!-- เพิ่ม Card อื่นๆ ตามต้องการ -->
 
-<h3>นายณิชพน ธนวัตณัชกุล</h3>
+    </section>
 
-<p>รหัสนักศึกษา : 664245034</p>
+    <!-- =========================
+         Footer
+    ========================== -->
+    <footer style="text-align:center;padding:40px 20px;color:#cbd5e1;">
+        <p>© 2026 Nichapon</p>
+    </footer>
 
-<p>หมู่เรียน : 66/44</p>
+    <!-- Back To Top Button -->
+    <button id="topBtn" onclick="backToTop()">↑</button>
 
-<p>รายวิชา : ระบบฐานข้อมูลขั้นสูง</p>
-
-</section>
-
-<section class="about">
-
-<h2>รวมผลงานโมเดล Machine Learning</h2>
-
-<p>
-
-โมเดล Machine Learning ทั้งหมดจากรายวิชานี้
-ถูกเทรนและ Deploy ขึ้นเป็นเว็บแอปที่ใช้งานได้จริง
-บน Streamlit Cloud
-
-</p>
-
-</section>
-
-<section class="projects">
-
-<!-- เดี๋ยวใส่การ์ดโปรเจกต์ทั้ง 6 อันในขั้นต่อไป -->
-
-</section>
-
-<footer>
-
-© 2026 Nichapon
-
-</footer>
-
+    <script src="script.js"></script>
 </body>
-
 </html>
