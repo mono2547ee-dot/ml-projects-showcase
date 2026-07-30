@@ -3,78 +3,219 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Machine Learning Portfolio</title>
+    <title>Machine Learning Portfolio - Nichapon</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- =========================
-         Hero Section
-    ========================== -->
-    <section class="hero">
-        <h1>🤖 Machine Learning Portfolio</h1>
-        <p>รวมผลงานโมเดล Machine Learning</p>
-    </section>
-
-    <!-- =========================
-         Profile Section
-    ========================== -->
-    <section class="profile">
-        <img src="profile.jpg" alt="profile">
-        <h2>ผู้พัฒนา</h2>
-        <h3>นายณิชพน ธนวัตณัชกุล</h3>
-        <p>รหัสนักศึกษา : 664245034</p>
-        <p>หมู่เรียน : 66/44</p>
-        <p>รายวิชา : ระบบฐานข้อมูลขั้นสูง</p>
-    </section>
-
-    <!-- =========================
-         About Section
-    ========================== -->
-    <section class="about">
-        <h2>รวมผลงานโมเดล Machine Learning</h2>
-        <p>
-            โมเดล Machine Learning ทั้งหมดจากรายวิชานี้
-            ถูกเทรนและ Deploy ขึ้นเป็นเว็บแอปที่ใช้งานได้จริง
-            บน Streamlit Cloud
-        </p>
-    </section>
-
-    <!-- =========================
-         Projects Section
-    ========================== -->
-    <section class="projects">
-
-        <!-- Card 1 -->
-        <div class="card">
-            <img src="https://via.placeholder.com/400x220/1e293b/38bdf8?text=Heart+Disease" alt="Heart Disease">
-            <h3>ทำนายความเสี่ยงโรคหัวใจ (Decision Tree)</h3>
-            <p>จำแนกความเสี่ยงการเกิดโรคหัวใจจากข้อมูลสุขภาพผู้ป่วย ด้วยเทคนิค Decision Tree</p>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="header-text">
+                    <p class="subtitle">🤖 MODEL INDEX — 6 DEPLOYED APPS</p>
+                    <h1>รวมผลงานโมเดล Machine Learning</h1>
+                    <p class="description">
+                        โมเดล Machine Learning ทั้งหมดจากรายวิชานี้ ถูกเทรนและ deploy ขึ้นเป็นเว็บแอปที่ใช้งานได้จริง 
+                        บน Streamlit Cloud กดที่การ์ดด้านล่างเพื่อเปิดใช้งานแต่ละเว็บแอป
+                    </p>
+                </div>
+            </div>
         </div>
+    </header>
 
-        <!-- Card 2 -->
-        <div class="card">
-            <img src="https://via.placeholder.com/400x220/1e293b/38bdf8?text=Credit+Risk" alt="Credit Risk">
-            <h3>ระบบประเมินความเสี่ยงการผิดนัดชำระบัตรเครดิต</h3>
-            <p>วิเคราะห์โอกาสที่ลูกค้าจะผิดนัดชำระในอนาคตถัดไป จากประวัติการชำระเงิน 6 เดือน วงเงิน และข้อมูลพื้นฐาน ด้วยเทคนิค SVM</p>
+    <!-- Profile Section -->
+    <section class="profile-section">
+        <div class="container">
+            <div class="profile-card">
+                <div class="profile-avatar">
+                    <img src="https://ui-avatars.com/api/?name=Nichapon&background=38bdf8&color=fff&size=200" alt="Profile">
+                </div>
+                <div class="profile-info">
+                    <p class="profile-label">ผู้พัฒนา</p>
+                    <h2>นายณิชพน ธนวัตณัชกุล</h2>
+                    <div class="profile-details">
+                        <span>รหัสนักศึกษา 664245034</span>
+                        <span>หมู่เรียน 66/44</span>
+                        <span>รายวิชา ระบบฐานข้อมูลขั้นสูง</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Category Tags -->
+            <div class="category-tags">
+                <span class="tag">ประเภทงาน</span>
+                <span class="tag tag-classification">CLASSIFICATION</span>
+                <span class="tag tag-regression">REGRESSION</span>
+                <span class="tag tag-clustering">CLUSTERING</span>
+            </div>
         </div>
-
-        <!-- เพิ่ม Card อื่นๆ ตามต้องการ -->
-
     </section>
 
-    <!-- =========================
-         Footer
-    ========================== -->
-    <footer style="text-align:center;padding:40px 20px;color:#cbd5e1;">
-        <p>© 2026 Nichapon</p>
+    <!-- Projects Section -->
+    <section class="projects-section">
+        <div class="container">
+            <div class="projects-grid">
+                
+                <!-- Card 1: Decision Tree -->
+                <div class="project-card" data-aos="fade-up">
+                    <div class="card-image">
+                        <img src="https://via.placeholder.com/600x400/1e293b/38bdf8?text=Decision+Tree" alt="Decision Tree">
+                        <div class="card-badge">LIVE</div>
+                    </div>
+                    <div class="card-content">
+                        <p class="model-number">MODEL · 01</p>
+                        <h3>ทำนายความเสี่ยงโรคหัวใจ (Decision Tree)</h3>
+                        <p class="algorithm">ALGORITHM: Decision Tree</p>
+                        <p class="description">
+                            จำแนกความเสี่ยงการเกิดโรคหัวใจจากข้อมูลสุขภาพผู้ป่วย ด้วยเทคนิค Decision Tree
+                        </p>
+                        <div class="card-buttons">
+                            <a href="https://decisiontreeml3-6wblixmk5jp5ipcsyfsi6g.streamlit.app/" target="_blank" class="btn btn-primary">
+                                เปิดเว็บแอป →
+                            </a>
+                            <a href="https://github.com/mono2547ee-dot/DecisionTree_ML3" target="_blank" class="btn btn-secondary">
+                                โค้ดบน GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: SVM Diabetes -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-image">
+                        <img src="https://via.placeholder.com/600x400/1e293b/38bdf8?text=SVM+Diabetes" alt="SVM Diabetes">
+                        <div class="card-badge">LIVE</div>
+                    </div>
+                    <div class="card-content">
+                        <p class="model-number">MODEL · 02</p>
+                        <h3>ระบบประเมินความเสี่ยงการผิดนัดชำระบัตรเครดิต</h3>
+                        <p class="algorithm">ALGORITHM: Support Vector Machine (SVM)</p>
+                        <p class="description">
+                            วิเคราะห์โอกาสที่ลูกค้าจะผิดนัดชำระในเดือนถัดไป จากประวัติการชำระเงิน 6 เดือน วงเงิน และข้อมูลพื้นฐาน ด้วยเทคนิค SVM
+                        </p>
+                        <div class="card-buttons">
+                            <a href="https://svm-44-038-k49ahsa3fdyeudpbm4vjfd.streamlit.app/" target="_blank" class="btn btn-primary">
+                                เปิดเว็บแอป →
+                            </a>
+                            <a href="https://github.com/mono2547ee-dot/-SVM-Diabetes-Prediction-" target="_blank" class="btn btn-secondary">
+                                โค้ดบน GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: K-Means -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-image">
+                        <img src="https://via.placeholder.com/600x400/1e293b/38bdf8?text=K-Means" alt="K-Means">
+                        <div class="card-badge">LIVE</div>
+                    </div>
+                    <div class="card-content">
+                        <p class="model-number">MODEL · 03</p>
+                        <h3>K-Means Clustering</h3>
+                        <p class="algorithm">ALGORITHM: K-Means</p>
+                        <p class="description">
+                            การจัดกลุ่มข้อมูลด้วยอัลกอริทึม K-Means Clustering เพื่อค้นหารูปแบบและโครงสร้างของข้อมูล
+                        </p>
+                        <div class="card-buttons">
+                            <a href="https://k-mean-yxbtxc9wwbqhmbnzfgwkak.streamlit.app/" target="_blank" class="btn btn-primary">
+                                เปิดเว็บแอป →
+                            </a>
+                            <a href="https://github.com/mono2547ee-dot/K-Mean" target="_blank" class="btn btn-secondary">
+                                โค้ดบน GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4: Random Forest -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-image">
+                        <img src="https://via.placeholder.com/600x400/1e293b/38bdf8?text=Random+Forest" alt="Random Forest">
+                        <div class="card-badge">LIVE</div>
+                    </div>
+                    <div class="card-content">
+                        <p class="model-number">MODEL · 04</p>
+                        <h3>Random Forest Classifier</h3>
+                        <p class="algorithm">ALGORITHM: Random Forest</p>
+                        <p class="description">
+                            การจำแนกประเภทข้อมูลด้วยอัลกอริทึม Random Forest ที่มีความแม่นยำสูง
+                        </p>
+                        <div class="card-buttons">
+                            <a href="https://randomforest-tbeqiyi26nczfskrbpmifq.streamlit.app/" target="_blank" class="btn btn-primary">
+                                เปิดเว็บแอป →
+                            </a>
+                            <a href="https://github.com/mono2547ee-dot/random_forest" target="_blank" class="btn btn-secondary">
+                                โค้ดบน GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5: California Housing -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card-image">
+                        <img src="https://via.placeholder.com/600x400/1e293b/38bdf8?text=California+Housing" alt="California Housing">
+                        <div class="card-badge">LIVE</div>
+                    </div>
+                    <div class="card-content">
+                        <p class="model-number">MODEL · 05</p>
+                        <h3>California Housing Price Prediction</h3>
+                        <p class="algorithm">ALGORITHM: Regression Model</p>
+                        <p class="description">
+                            การทำนายราคาบ้านในรัฐแคลิฟอร์เนียจากข้อมูลต่างๆ เช่น ตำแหน่งที่ตั้ง รายได้ และจำนวนห้อง
+                        </p>
+                        <div class="card-buttons">
+                            <a href="https://californiahousingtest-gmn4jrxf7sy2rj5hjtddsi.streamlit.app/" target="_blank" class="btn btn-primary">
+                                เปิดเว็บแอป →
+                            </a>
+                            <a href="https://github.com/mono2547ee-dot/california_housing_test" target="_blank" class="btn btn-secondary">
+                                โค้ดบน GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6: KNN -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="card-image">
+                        <img src="https://via.placeholder.com/600x400/1e293b/38bdf8?text=KNN" alt="KNN">
+                        <div class="card-badge">LIVE</div>
+                    </div>
+                    <div class="card-content">
+                        <p class="model-number">MODEL · 06</p>
+                        <h3>การทำนายข้อมูลฉุกเฉินด้วย KNN</h3>
+                        <p class="algorithm">ALGORITHM: K-Nearest Neighbor (KNN)</p>
+                        <p class="description">
+                            การทำนายข้อมูลฉุกเฉินด้วยเทคนิค K-Nearest Neighbor หรือ KNN
+                        </p>
+                        <div class="card-buttons">
+                            <a href="https://knn-ml-01-69.streamlit.app/" target="_blank" class="btn btn-primary">
+                                เปิดเว็บแอป →
+                            </a>
+                            <a href="https://github.com/mono2547ee-dot/KNN-ML" target="_blank" class="btn btn-secondary">
+                                โค้ดบน GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 Nichapon. All rights reserved.</p>
+        </div>
     </footer>
 
-    <!-- Back To Top Button -->
-    <button id="topBtn" onclick="backToTop()">↑</button>
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" onclick="scrollToTop()">↑</button>
 
     <script src="script.js"></script>
 </body>
